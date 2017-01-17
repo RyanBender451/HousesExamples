@@ -12,10 +12,11 @@ namespace HousesExample
         private int rooms;
         private int size;
         private int doors;
+        static private int avgHousePrice;
 
-        public void Paint(string color)
+        public void Paint(string newColor)
         {
-            this.color = color;
+            color = newColor;
         }
         public string CurrentColor()
         {
