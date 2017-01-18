@@ -12,8 +12,31 @@ namespace HousesExample
         private int rooms;
         private int size;
         private int doors;
-        static private int avgHousePrice;
+        private string name;
+  
 
+        public string Name
+        {
+            get { return this.name;  }
+            set { this.name = value; }
+     
+        }
+
+        public House()
+        {
+            this.color = "Steel";
+            this.rooms = 6;
+            this.size = 1230;
+            this.doors = 2;
+        }
+
+        public House(string color, int size)
+        {
+            this.color = color;
+            this.size = size;
+            this.rooms = 3;
+            this.doors = 5;
+        }
         public House(string color, int rooms, int size, int doors)
         {
             this.color = color;

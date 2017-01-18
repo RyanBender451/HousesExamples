@@ -11,20 +11,21 @@ namespace HousesExample
         static void Main(string[] args)
         {
             House house1 = new House("Green", 4, 1000, 3);
-            house1.DisplayHouseInfo();
 
+            
+            House house2 = new House("Blue", 700);
+            House house3 = new House();
+
+            //house2.DisplayHouseInfo();
+            //house2.Paint("Yellow");
+
+            //house1.DisplayHouseInfo();
+            //house2.DisplayHouseInfo();
+            //house3.DisplayHouseInfo();
             //house1.Paint("Green");
             //Console.WriteLine(house1.CurrentColor());
-
-            //house1.Paint("White");
-            //Console.WriteLine(house1.CurrentColor());
-
-            //House house2 = new House();
-            //house2.Paint("Blue");
-
-            //Console.WriteLine("House 1 is: " + house1.CurrentColor());
-            //Console.WriteLine("House 2 is: " + house2.CurrentColor());
-          
+            house2.Name = "The blue house!";
+            Console.WriteLine("This is the name of thy house " + house2.Name);
         }
     }
 }
