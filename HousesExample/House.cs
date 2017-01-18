@@ -14,6 +14,14 @@ namespace HousesExample
         private int doors;
         static private int avgHousePrice;
 
+        public House(string color, int rooms, int size, int doors)
+        {
+            this.color = color;
+            this.rooms = rooms;
+            this.size  = size;
+            this.doors = doors;
+        }
+
         public void Paint(string newColor)
         {
             color = newColor;
@@ -21,6 +29,13 @@ namespace HousesExample
         public string CurrentColor()
         {
             return color;
+        }
+        public void DisplayHouseInfo()
+        {
+            Console.Write("House Color: " + color);
+            Console.Write(", Rooms: " + rooms);
+            Console.Write(", Size is: " + size + " sq/ft");
+            Console.WriteLine(", with: " + doors + " doors");
         }
     }
 }
